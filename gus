@@ -1,0 +1,42 @@
+#!/bin/sh
+
+if [ $# -lt 1 -o $1 == "help" ]
+then
+    echo "Gus AKA Ciffy quote generator\n - Non sentirai più la mancanza del Gus!\n $0 <parlami>"
+    exit
+else
+    source=$1
+fi
+
+## Grab a quote from a user defined list
+if [ $source == "parlami" ]
+    then
+
+    num_quotes=19
+    rand=$[ ( $RANDOM % $num_quotes ) + 1 ]
+
+    case $rand in
+        1) quote="EEEMMmm...BOH...";;
+        2) quote="Yeah!";;
+        3) quote="Fottesega";;
+        4) quote="Eh si eh!";;
+        5) quote="La vita è un biscotto, lo mangi";;
+        6) quote="Io alle 17.30 del venerdí, vado";;
+        7) quote="Si vabè, si vabè";;
+        8) quote="Si ma non valeeeeee. Ci sono anche stupidate delle quali non mi ritengo responsabile";;
+        9) quote="Lasciami leggere la Gazza!";;
+        10) quote="Eh vabèèè...";;
+        11) quote="Questo weekend ho un concerto";;
+        12) quote="AAAAAAAAposto!";;
+        13) quote="COSE che fanno COSE";;
+        14) quote="È mattina presto per tutti";;
+        15) quote="Che sonnoooooo";;
+        16) quote="Sbatti";;
+        17) quote="No, ho prova!";;
+        18) quote="No, ho una cena.";;
+        19) quote="Quel weekend avrò sempre da fare!";;
+    esac
+
+        echo "Gus: \"$quote\"" | fmt -80
+
+fi
