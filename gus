@@ -12,7 +12,7 @@ fi
 if [ $source == "parlami" ]
     then
 
-    num_quotes=19
+    num_quotes=25
     rand=$[ ( $RANDOM % $num_quotes ) + 1 ]
 
     case $rand in
