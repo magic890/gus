@@ -35,6 +35,12 @@ if [ $source == "parlami" ]
         17) quote="No, ho prova!";;
         18) quote="No, ho una cena.";;
         19) quote="Quel weekend avrò sempre da fare!";;
+        20) quote="Hai capito? Va bene anche no!";;
+        21) quote="Una partita a Risiko? Ci sta";;
+        22) quote="Si ma puoi?";;
+        23) quote="Ma quindi partita a Risiko quando?";;
+        24) quote="Domani abbiamo un esame?";;
+        25) quote="Ce la giochiamo a pari e dispari?";;
     esac
 
         echo "Gus: \"$quote\"" | fmt -80
